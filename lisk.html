@@ -1,0 +1,76 @@
+<html>
+ <head>
+  <title>New Tab</title>
+  <style>
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    background: #FEFEFE;
+  }
+
+  #color-wrapper {
+      -webkit-transition-duration: 600ms;
+      transition-duration: 600ms;
+  }
+
+  #color-wrapper.loading {
+      transform: translate(100%);
+      -webkit-transform: translate(100%);    
+  }
+
+  #content-wrapper {
+    color: #FEFEFE;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 300%;
+    vertical-align: 50%;
+  }
+
+  #content-wrapper > img {
+    max-width: 150px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .inner {
+      content: "";
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .socials {
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .social {
+    margin: 10px;
+  }
+  .social img {
+    max-width: 30px;
+  }
+  </style>
+ </head>
+ <body>
+    <div id="color-wrapper" class="loading">
+      <div class="inner">
+        <div id="content-wrapper">
+          <img src="logo-1x.png" srcset="logo-2x.png 2x" alt="Lisk logo">
+          <div class="socials">
+            <div class="social"><a href="https://blog.lisk.io/"><img src="social/medium-1x.png" srcset="social/medium-2x.png 2x" alt="blog link"></a></div>
+            <div class="social"><a href="https://github.com/LiskHQ/"><img src="social/github-1x.png" srcset="social/github-2x.png 2x" alt="github link"></a></div>                        
+            <div class="social"><a href="https://twitter.com/liskhq"><img src="social/twitter-1x.png" srcset="social/twitter-2x.png 2x" alt="twitter link"></a></div>
+            <div class="social"><a href="https://www.reddit.com/r/Lisk/"><img src="social/reddit-1x.png" srcset="social/reddit-2x.png 2x" alt="reddit link"></a></div>
+          </div>
+        </div>
+      </div>
+  </div>
+ </body>
+ <script src="main.js" ></script>
+</html>
